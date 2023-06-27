@@ -5,6 +5,11 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      padding: const EdgeInsets.all(20),
+      child: const Row(
+        children: [],
+      ),
+    );
   }
 }
