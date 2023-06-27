@@ -13,15 +13,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(
-      height: size.height,
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage('assets/images/bkg.jpg'), fit: BoxFit.cover),
+    return Scaffold(
+      body: Container(
+        height: size.height,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/images/bkg.jpg'), fit: BoxFit.cover),
+        ),
+        child: const Column(children: [
+          CustomAppBar(),
+        ]),
       ),
-      child: const Column(children: [
-        CustomAppBar(),
-      ]),
     );
   }
 }
