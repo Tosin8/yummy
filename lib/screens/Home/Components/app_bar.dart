@@ -58,12 +58,25 @@ var Icon_Menu = Container(
 ));
 
 class Center_Menu extends StatelessWidget {
+  final String title;
+  final Function press;
   const Center_Menu({
-    Key key,
+    required Key key,
+    required this.title,
+    required this.press,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Center_Nav;
+    return InkWell(
+      onTap: () {},
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Text(
+          title.toUpperCase(),
+          style: nav_css(),
+        ),
+      ),
+    );
   }
 }
