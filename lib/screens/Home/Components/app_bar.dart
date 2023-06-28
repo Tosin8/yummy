@@ -39,6 +39,7 @@ class CustomAppBar extends StatelessWidget {
   }
 }
 
+// ignore: camel_case_types
 class Center_Menu extends StatelessWidget {
   final String title;
   final Function press;
@@ -47,7 +48,7 @@ class Center_Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: press,
+      onTap: () {},
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Text(
