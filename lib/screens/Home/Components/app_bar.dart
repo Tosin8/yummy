@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../widgets/app_bar.dart';
+
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
 
@@ -25,23 +27,20 @@ var Center_Nav = Row(
   children: [
     Text(
       'Home'.toUpperCase(),
-      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      style: nav_css(),
     ),
     Text(
       'Menu'.toUpperCase(),
-      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      style: nav_css(),
     ),
-    Text(
-      'About'.toUpperCase(),
-      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-    ),
+    Text('About'.toUpperCase(), style: nav_css()),
     Text(
       'Location'.toUpperCase(),
-      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      style: nav_css(),
     ),
     Text(
       'Contact'.toUpperCase(),
-      style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      style: nav_css(),
     ),
   ],
 );
