@@ -11,9 +11,8 @@ class CustomAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Center_Nav,
-          Expanded(
-            child: Icon_Menu,
-          ),
+          const SizedBox(width: 30),
+          Icon_Menu,
         ],
       ),
     );
@@ -22,6 +21,7 @@ class CustomAppBar extends StatelessWidget {
 
 // ignore: non_constant_identifier_names
 var Center_Nav = Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
   children: [
     Text(
       'Home'.toUpperCase(),
