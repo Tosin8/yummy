@@ -23,12 +23,13 @@ class CustomAppBar extends StatelessWidget {
 
 // ignore: non_constant_identifier_names
 var Center_Nav = Row(
-  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  mainAxisAlignment: MainAxisAlignment.spaceAround,
   children: [
     Text(
       'Home'.toUpperCase(),
       style: nav_css(),
     ),
+    const Spacer(),
     Text(
       'Menu'.toUpperCase(),
       style: nav_css(),
@@ -55,3 +56,14 @@ var Icon_Menu = Container(
     Icon(Icons.verified_user)
   ],
 ));
+
+class Center_Menu extends StatelessWidget {
+  const Center_Menu({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Center_Nav;
+  }
+}
